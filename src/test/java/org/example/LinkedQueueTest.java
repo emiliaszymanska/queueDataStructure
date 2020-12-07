@@ -59,13 +59,13 @@ class LinkedQueueTest {
     @Test
     public void testDequeueAll() {
         LinkedQueue queue = new LinkedQueue();
-
         for (int i = 0; i < 10; i++) {
             queue.enqueue("abc");
         }
         for (int i = 0; i < 10; i++) {
             queue.dequeue();
         }
+
         assertTrue(queue.isEmpty());
         assertEquals(0, queue.size());
     }
